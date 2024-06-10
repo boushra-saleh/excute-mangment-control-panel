@@ -1,0 +1,1582 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link href="../dist/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/css/orders.css"> 
+      
+    </head>
+       
+
+  <body >
+   
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+
+    <div id="main-wrapper" data-theme="light" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed" data-boxed-layout="full">
+
+    <header class="topbar" data-navbarbg="skin6">
+        <nav class="navbar top-navbar navbar-expand-lg">
+            <div class="navbar-header" data-logobg="skin6">
+                <!-- This is for the sidebar toggle which is visible on mobile only -->
+                <a class="nav-toggler waves-effect waves-light d-block d-lg-none" href="javascript:void(0)"><i
+                        class="ti-menu ti-close"></i></a>
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-brand">
+                    <!-- Logo icon -->
+                    <a href="index.html">
+                        <img src="../dist/img/logo.jpg" alt="" style="width: 50px; height: 50px;">
+                        <label style="color: black; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">ENGRADA</label>
+                    </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Toggle which is visible on mobile only -->
+                <!-- ============================================================== -->
+                <a class="topbartoggler d-block d-lg-none waves-effect waves-light" href="javascript:void(0)"
+                    data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i
+                        class="ti-more"></i></a>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Logo -->
+            <!-- ============================================================== -->
+            <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                <!-- ============================================================== -->
+                <!-- toggle and nav items -->
+                <!-- ============================================================== -->
+                <ul class="navbar-nav float-left me-auto ms-3 ps-1">
+                    <!-- Notification -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  pl-md-3 position-relative" href="neworder.html"
+                            id="archive" role="button"  aria-haspopup="true"
+                            aria-expanded="false">
+                            <span><i data-feather="archive" class="svg-icon"></i></span>
+                            <span class="badge text-bg-warning notify-no rounded-circle">20</span>
+                        </a>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  pl-md-3 position-relative" href="chat.html"
+                            id="mail" role="button"  aria-haspopup="true"
+                            aria-expanded="false">
+                            <span><i data-feather="mail" class="svg-icon"></i></span>
+                            <span class="badge text-bg-warning notify-no rounded-circle">20</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle pl-md-3 position-relative" href="javascript:void(0)"
+                            id="bell" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <span><i data-feather="bell" class="svg-icon"></i></span>
+                            <span class="badge text-bg-warning notify-no rounded-circle">5</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-left mailbox animated bounceInDown">
+                            <ul class="list-style-none">
+                                <li>
+                                    <div class="message-center notifications position-relative">
+                                        <!-- Message -->
+                                        <a href="javascript:void(0)"
+                                            class="message-item d-flex align-items-center border-bottom px-3 py-2">
+                                            <div class="btn btn-danger rounded-circle btn-circle"><i
+                                                    data-feather="airplay" class="text-white"></i></div>
+                                            <div class="w-75 d-inline-block v-middle ps-2">
+                                                <h6 class="message-title mb-0 mt-1">Luanch Admin</h6>
+                                                <span class="font-12 text-nowrap d-block text-muted">Just see
+                                                    the my new
+                                                    admin!</span>
+                                                <span class="font-12 text-nowrap d-block text-muted">9:30 AM</span>
+                                            </div>
+                                        </a>
+                                        <!-- Message -->
+                                        <a href="javascript:void(0)"
+                                            class="message-item d-flex align-items-center border-bottom px-3 py-2">
+                                            <span class="btn btn-success text-white rounded-circle btn-circle"><i
+                                                    data-feather="calendar" class="text-white"></i></span>
+                                            <div class="w-75 d-inline-block v-middle ps-2">
+                                                <h6 class="message-title mb-0 mt-1">Event today</h6>
+                                                <span
+                                                    class="font-12 text-nowrap d-block text-muted text-truncate">Just
+                                                    a reminder that you have event</span>
+                                                <span class="font-12 text-nowrap d-block text-muted">9:10 AM</span>
+                                            </div>
+                                        </a>
+                                        <!-- Message -->
+                                        <a href="javascript:void(0)"
+                                            class="message-item d-flex align-items-center border-bottom px-3 py-2">
+                                            <span class="btn btn-info rounded-circle btn-circle"><i
+                                                    data-feather="settings" class="text-white"></i></span>
+                                            <div class="w-75 d-inline-block v-middle ps-2">
+                                                <h6 class="message-title mb-0 mt-1">Settings</h6>
+                                                <span
+                                                    class="font-12 text-nowrap d-block text-muted text-truncate">You
+                                                    can customize this template
+                                                    as you want</span>
+                                                <span class="font-12 text-nowrap d-block text-muted">9:08 AM</span>
+                                            </div>
+                                        </a>
+                                        <!-- Message -->
+                                        <a href="javascript:void(0)"
+                                            class="message-item d-flex align-items-center border-bottom px-3 py-2">
+                                            <span class="btn btn-primary rounded-circle btn-circle"><i
+                                                    data-feather="box" class="text-white"></i></span>
+                                            <div class="w-75 d-inline-block v-middle ps-2">
+                                                <h6 class="message-title mb-0 mt-1">Pavan kumar</h6> <span
+                                                    class="font-12 text-nowrap d-block text-muted">Just
+                                                    see the my admin!</span>
+                                                <span class="font-12 text-nowrap d-block text-muted">9:02 AM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="nav-link pt-3 text-center text-dark" href="javascript:void(0);">
+                                        <strong>Check all notifications</strong>
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- End Notification -->
+                    <!-- ============================================================== -->
+                    <!-- create new -->
+                    <!-- ============================================================== -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i data-feather="settings" class="svg-icon"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item d-none d-md-block">
+                        <a class="nav-link" href="javascript:void(0)">
+                            <div class="customize-input">
+                                <select
+                                    class="custom-select form-control bg-white custom-radius custom-shadow border-0">
+                                    <option selected>EN</option>
+                                    <option value="1">AB</option>
+                                    <option value="2">AK</option>
+                                    <option value="3">BE</option>
+                                </select>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <!-- ============================================================== -->
+                <!-- Right side toggle and nav items -->
+                <!-- ============================================================== -->
+                <ul class="navbar-nav float-end">
+                    <!-- ============================================================== -->
+                  
+                    <!-- ============================================================== -->
+                    <!-- User profile and search -->
+                    <!-- ============================================================== -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <img src="../assets/images/users/profile-pic.jpg" alt="user" class="rounded-circle"
+                                width="40">
+                            <span class="ms-2 d-none d-lg-inline-block"><span>Hello,</span> <span
+                                    class="text-dark">Jason Doe</span> <i data-feather="chevron-down"
+                                    class="svg-icon"></i></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end dropdown-menu-right user-dd animated flipInY">
+                            <a class="dropdown-item" href="javascript:void(0)"><i data-feather="user"
+                                    class="svg-icon me-2 ms-1"></i>
+                                My Profile</a>
+                            <a class="dropdown-item" href="javascript:void(0)"><i data-feather="credit-card"
+                                    class="svg-icon me-2 ms-1"></i>
+                                My Balance</a>
+                            <a class="dropdown-item" href="javascript:void(0)"><i data-feather="mail"
+                                    class="svg-icon me-2 ms-1"></i>
+                                Inbox</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="javascript:void(0)"><i data-feather="settings"
+                                    class="svg-icon me-2 ms-1"></i>
+                                Account Setting</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="javascript:void(0)"><i data-feather="power"
+                                    class="svg-icon me-2 ms-1"></i>
+                                Logout</a>
+                            <div class="dropdown-divider"></div>
+                            <div class="pl-4 p-3"><a href="javascript:void(0)" class="btn btn-sm btn-info">View
+                                    Profile</a></div>
+                        </div>
+                    </li>
+                    <!-- ============================================================== -->
+                    <!-- User profile and search -->
+                    <!-- ============================================================== -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <aside class="left-sidebar" data-sidebarbg="skin6">
+        <!-- Sidebar scroll-->
+        <div class="scroll-sidebar" data-sidebarbg="skin6">
+            <!-- Sidebar navigation-->
+            <nav class="sidebar-nav">
+                <ul id="sidebarnav">
+                    <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="index.html"
+                            aria-expanded="false"><i data-feather="home" class="feather-icon"></i><span
+                                class="hide-menu">HOME</span></a></li>
+                    <li class="list-divider"></li>
+                    <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="designers.html"
+                        aria-expanded="false"><i data-feather="user" class="feather-icon"></i><span
+                            class="hide-menu">DEIGNERS
+                        </span></a>
+                </li>
+                <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                    aria-expanded="false"><i data-feather="shopping-bag" class="feather-icon"></i><span
+                        class="hide-menu">CUSTOMERS </span></a>
+                <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                    
+                    <li class="sidebar-item"><a href="Enternal customers.html" class="sidebar-link"><span
+                                class="hide-menu"> ENTERNAL CUSTOMERS
+                            </span></a>
+                    </li>
+                    <li class="sidebar-item"><a href="External customers.html" class="sidebar-link"><span
+                                class="hide-menu"> EXTERNAL CUSTOMERS
+                            </span></a>
+                    </li>
+                </ul>
+            </li>
+                <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                    aria-expanded="false"><i data-feather="sliders" class="feather-icon"></i><span
+                        class="hide-menu">ORDERS </span></a>
+                <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                    <li class="sidebar-item"><a href="enternal.html" class="sidebar-link"><span
+                        class="hide-menu"> ENTENAL ORDERS
+                    </span></a>
+            </li>
+            <li class="sidebar-item"><a href="external.html" class="sidebar-link"><span
+                        class="hide-menu">EXTERNAL ORDERS
+                    </span></a>
+            </li>
+                   
+                </ul>
+                </li>
+                    <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="app-calendar.html"
+                            aria-expanded="false"><i data-feather="calendar" class="feather-icon"></i><span
+                                class="hide-menu">Calendar</span></a></li>
+                                <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                                    aria-expanded="false"><i data-feather="file-text" class="feather-icon"></i><span
+                                        class="hide-menu">REPORTS </span></a>
+                                <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                                    <li class="sidebar-item"><a href="DailyReport.html" class="sidebar-link"><span
+                                                class="hide-menu"> DAILY
+                                            </span></a>
+                                    </li>
+                                    <li class="sidebar-item"><a href="monthlyReport.html" class="sidebar-link"><span
+                                                class="hide-menu"> MONTHLY
+                                            </span></a>
+                                    </li>
+                                    <li class="sidebar-item"><a href="AnnulyReport.html" class="sidebar-link"><span
+                                                class="hide-menu"> ANNUAL
+                                            </span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="deploy.html"
+                                aria-expanded="false"><i data-feather="share" class="feather-icon"></i><span
+                                    class="hide-menu">DEPLOYMENT</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                            aria-expanded="false"><i data-feather="grid" class="feather-icon"></i><span
+                                class="hide-menu">DOMAINS & FONTS </span></a>
+                        <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                            <li class="sidebar-item"><a href="FONT.html" class="sidebar-link"><span
+                                        class="hide-menu"> SHOW & ADD FONTS 
+                                    </span></a>
+                            </li>
+                            <li class="sidebar-item"><a href="domain.html" class="sidebar-link"><span
+                                        class="hide-menu">
+                                       ADD DOMAIN
+                                    </span></a>
+                            </li>
+                            <li class="sidebar-item"><a href="showdomain.html" class="sidebar-link"><span
+                                class="hide-menu">
+                               SHOW DOMAIN
+                            </span></a>
+                    </li>
+                            
+                        </ul>
+                    </li>
+                    <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                        aria-expanded="false"><i data-feather="slack" class="feather-icon"></i><span
+                            class="hide-menu">TYPES OF DESIGNES </span></a>
+                    <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                        
+                        <li class="sidebar-item"><a href="showtypes.html" class="sidebar-link"><span
+                                    class="hide-menu"> SHOW TYPES
+                                </span></a>
+                        </li>
+                        <li class="sidebar-item"><a href="addtype(no-js).html" class="sidebar-link"><span
+                                    class="hide-menu">
+                                    ADD TYPE
+                                </span></a>
+                        </li>
+                       
+                      
+                    </ul>
+                </li>
+               
+                           
+                    <li class="list-divider"></li>
+                  
+                    <li class="nav-small-cap"><span class="hide-menu">Extra</span></li>
+                    <li class="sidebar-item"> <a class="sidebar-link " href="authentication-login1.html"
+                        aria-expanded="false"><i data-feather="log-out" class="feather-icon"></i><span
+                            class="hide-menu">LOGOUT </span></a>
+                </li>         
+                </ul>
+            </nav>
+            <!-- End Sidebar navigation -->
+        </div>
+        <!-- End Sidebar scroll-->
+    </aside>
+
+      
+       <div class="content-page">
+        
+     <div class="container-fluid">
+        
+        <div class="row">
+
+             <div class="col-12">
+                
+              
+                <div class="page-breadcrumb" >
+                    <div class="row" style="margin-left: 250px; margin-top: 120px; margin-bottom: 12px; margin-right: 2px; ">
+                        <div class="col-5 align-self-center"  >
+                            <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">Good Luck Today!</h3>
+                            <div class="d-flex align-items-center">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb m-0 p-0">
+                                        <li class="breadcrumb-item"><a href="index.html">sunday</a>
+                                        </li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                        <div style="margin-left: 700px; ">
+                        <div class="col-5 align-self-center" >
+                            <div class="customize-input float-end"  >
+                                <input type="date" class="custom-select form-control bg-white custom-radius " id="exampleInputText3" value="">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="card" style="margin-left: 280px;">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card card-widget task-card">
+                                    <div class="card-body">
+                                        <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <div>
+                                                    <h5 class="mb-2">logo customiz</h5>
+                                                </div>
+                                            </div>
+                                            <div class="media align-items-center mt-md-0 mt-3">
+                                                <a href="#" class="btn bg-info-light mr-3" >start</a>
+                                                <a class="btn bg-info-light" data-toggle="collapse" href="#collapseEdit1" role="button" aria-expanded="false" aria-controls="collapseEdit1"><i data-feather="edit"class="svg-icon"></i></a>
+                                               
+                                            </div>
+                                        </div>  
+                                    </div>
+                                </div>                                                                                                        
+                                <div class="collapse" id="collapseEdit1">                                            
+                                    <div class="card card-list task-card" id="edit">
+                                            <div  style="margin-top: 20px; margin-left: 16px;">
+                                                
+                                                <div class="form-group mb-0" style="margin: 19px;">
+                                                    <div style="margin-left: 1010px;"><a href="#" class="btn btn-outline-warning"> save</a></div> 
+                                                    <hr style="margin-top: 12px;">
+                                                 
+                                                </div>    
+                                        
+                                            </div> 
+                                    
+                                        <div class="card-body">
+                                            <div class="form-group mb-3 position-relative">
+                                            
+                                                <input type="text" class=" form-control bg-white  " style="border-radius: 10px;"  value="Design landing page of webkit">
+                                                <a href="#" class="task-edit task-simple-edit text-body"><i class="ri-edit-box-line"></i></a>
+                                            </div>
+                                            <div class="card mb-3" style="border-radius: 20px;">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-lg-3">
+                                                            <div class="form-group mb-0">
+                                                                <label for="exampleInputText2"   class="h5">content creator</label>
+                                                                <select  name="type" class="selectpicker custom-select form-control bg-white custom-radius" data-style="py-0"> 
+                                                                    <option>For Small Project</option>
+                                                                    <option> For Meduim Project </option>
+                                                                    <option>For Huge Project</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="form-group mb-0">
+                                                                <label for="exampleInputText2"   class="h5">Type </label>
+                                                                <select  name="type" class="selectpicker custom-select form-control bg-white custom-radius" data-style="py-0"> 
+                                                                    <option>Customiz</option>
+                                                                    <option>Similer</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="form-group mb-0">
+                                                                <label for="exampleInputText3" class="h5">Due Dates</label>
+                                                                <input type="date" class="custom-select form-control bg-white custom-radius " id="exampleInputText3" value="">
+                                                            </div>                        
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="form-group mb-0">
+                                                                <label for="exampleInputText3" class="h5">Price</label>
+                                                                <input type="text" class=" form-control bg-white custom-radius " id="exampleInputText3" value="10$">
+                                                            </div>                        
+                                                        </div>
+                                                        <hr style="margin-top: 12px;">
+                                                        <div class="col-lg-3">
+                                                            <div class="form-group mb-0">
+                                                                <label for="exampleInputText2"   class="h5"> Design</label>
+                                                                <select  name="type" class="selectpicker custom-select form-control bg-white custom-radius" data-style="py-0"> 
+                                                                    <option>Logo</option>
+                                                                    <option>Somthing</option>
+                                                                    <option>Somthing</option>
+                                                                    <option>Somthing</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="form-group mb-0">
+                                                                <label for="exampleInputText2"   class="h5">Type Of Design</label>
+                                                                <input type="text" class=" form-control bg-white custom-radius " id="exampleInputText3" value="symbol">
+                                                            </div>
+                                                        </div>
+                                                     
+                                                        <div class="col-lg-3">
+                                                            <div class="form-group mb-0">
+                                                                <label for="exampleInputText3" class="h5">Domain</label>
+                                                                <input type="text" class=" form-control bg-white custom-radius " id="exampleInputText3" value="sport">
+                                                            </div>                        
+                                                        </div>
+                                
+                                                       
+                                                        <div class="col-lg-2">
+                                                            <div class="form-group mb-0">
+                                                                <label for="exampleInputText3" class="h5">Colors</label>
+                                                                <div class="form-control bg-white custom-radius" style="text-align:justify;">
+                                                                <span class="dot" style="height: 25px; width: 25px;  background-color: #d10707; border-radius: 50%; display: inline-block;"></span>
+                                                                <span class="dot" style="height: 25px; width: 25px;  background-color: #a7c920; border-radius: 50%; display: inline-block;"></span>
+                                                                <span class="dot" style="height: 25px; width: 25px;  background-color: rgb(51, 168, 88); border-radius: 50%; display: inline-block;"></span>
+                                                                <span class="dot" style="height: 25px; width: 25px;  background-color: #520a0a; border-radius: 50%; display: inline-block;"></span>
+                                                                </div>
+                                                            </div>                        
+                                                        </div>
+
+                                                    
+                                                        <hr style="margin-top: 12px;">
+                                                        <div class="col-lg-3">
+                                                            <div class="form-group mb-0">
+                                                                <label for="exampleInputText3" class="h5">Illustration From Client</label>
+                                                                <div class="form-control bg-white custom-radius" style="text-align:justify;">
+                                                                    <a href="C:\Users\ABC\Desktop\cpp">
+                                                                        Click to open Image
+                                                                    </a>
+                                                                    </div>
+                                                            </div>                        
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="form-group mb-0">
+                                                                <label for="exampleInputText3" class="h5">File From Client</label>
+                                                                <div class="form-control bg-white custom-radius" style="text-align:justify;">
+                                                                    <a href="C:\Users\ABC\Desktop\cpp">
+                                                                        Click to open file
+                                                                    </a>
+                                                                    </div>
+                                                            </div>                        
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="form-group mb-0">
+                                                                <label for="exampleInputText3" class="h5">FOnt</label>
+                                                                <div class="form-control bg-white custom-radius" style="text-align:justify;">
+                                                                    <a href="C:\Users\ABC\Desktop\cpp">
+                                                                        Click to open Image
+                                                                    </a>
+                                                                    </div>
+                                                            </div>                        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card mb-3" style="border-radius: 20px;">
+                                                <div class="card-body">
+                                                    <div class="row">                                                                                                              
+                                                            <h5 style="color: #333; " class="mb-2">Description :</h5>
+                                                            <p class="mb-0">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card mb-3" style="border-radius: 20px;">
+                                                <div class="card-body">
+                                                    <div class="row">                                                                                                              
+                                                            <h5 style="color: #333; " class="mb-2">A Note From The Client About His Order  :</h5>
+                                                            <p class="mb-0">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card mb-3" style="border-radius: 20px;">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="form-group mb-0">
+                                                            <i class="ri-attachment-2"></i>
+                                                            <label for="exampleInputText01" class="h5">Upload Attachments</label>
+                                                            <input type="file" class=" form-control bg-white  " style="border-radius: 10px;" >
+                                                        </div>                                                                                                            
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>      
+                            </div>
+           
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="card" style="margin-left: 280px;">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card card-widget task-card">
+                                <div class="card-body">
+                                    <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <h5 class="mb-2">logo similer</h5>
+                                            </div>
+                                        </div>
+                                        <div class="media align-items-center mt-md-0 mt-3">
+                                            <a href="#" class="btn bg-info-light mr-3" >start</a>
+                                            <a class="btn bg-info-light" data-toggle="collapse" href="#collapseEdit2" role="button" aria-expanded="false" aria-controls="collapseEdit1"><i data-feather="edit"class="svg-icon"></i></a>
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>                                                                                                        
+                            <div class="collapse" id="collapseEdit2">                                            
+                                <div class="card card-list task-card" id="edit">
+                                        <div  style="margin-top: 20px; margin-left: 16px;">
+                                            
+                                            <div class="form-group mb-0" style="margin: 19px;">
+                                                <div style="margin-left: 1010px;"><a href="#" class="btn btn-outline-warning"> save</a></div> 
+                                                <hr style="margin-top: 12px;">
+                                             
+                                            </div>
+                                        </div> 
+                             
+                                    <div class="card-body">
+                                        <div class="form-group mb-3 position-relative">
+                                        
+                                            <input type="text" class=" form-control bg-white  " style="border-radius: 10px;"  value="Design landing page of webkit">
+                                            <a href="#" class="task-edit task-simple-edit text-body"><i data-feather="edit"class="svg-icon"></i></a>
+                                        </div>
+                                        <div class="card mb-3" style="border-radius: 20px;">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group mb-0">
+                                                            <label for="exampleInputText2"   class="h5">content creator</label>
+                                                            <select  name="type" class="selectpicker custom-select form-control bg-white custom-radius" data-style="py-0"> 
+                                                                <option>For Small Project</option>
+                                                                <option> For Meduim Project </option>
+                                                                <option>For Huge Project</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group mb-0">
+                                                            <label for="exampleInputText2"   class="h5">Type </label>
+                                                            <select  name="type" class="selectpicker custom-select form-control bg-white custom-radius" data-style="py-0"> 
+                                                                <option>Customiz</option>
+                                                                <option>Similer</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group mb-0">
+                                                            <label for="exampleInputText3" class="h5">Due Dates</label>
+                                                            <input type="date" class="custom-select form-control bg-white custom-radius " id="exampleInputText3" value="">
+                                                        </div>                        
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group mb-0">
+                                                            <label for="exampleInputText3" class="h5">Price</label>
+                                                            <input type="text" class=" form-control bg-white custom-radius " id="exampleInputText3" value="10$">
+                                                        </div>                        
+                                                    </div>
+                                                    <hr style="margin-top: 12px;">
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group mb-0">
+                                                            <label for="exampleInputText2"   class="h5"> Design</label>
+                                                            <select  name="type" class="selectpicker custom-select form-control bg-white custom-radius" data-style="py-0"> 
+                                                                <option>Logo</option>
+                                                                <option>Somthing</option>
+                                                                <option>Somthing</option>
+                                                                <option>Somthing</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group mb-0">
+                                                            <label for="exampleInputText2"   class="h5">Type Of Design</label>
+                                                            <input type="text" class=" form-control bg-white custom-radius " id="exampleInputText3" value="symbol">
+                                                        </div>
+                                                    </div>
+                                                 
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group mb-0">
+                                                            <label for="exampleInputText3" class="h5">Domain</label>
+                                                            <input type="text" class=" form-control bg-white custom-radius " id="exampleInputText3" value="sport">
+                                                        </div>                        
+                                                    </div>
+                            
+                                                   
+                                                    <div class="col-lg-2">
+                                                        <div class="form-group mb-0">
+                                                            <label for="exampleInputText3" class="h5">Colors</label>
+                                                            <div class="form-control bg-white custom-radius" style="text-align:justify;">
+                                                            <span class="dot" style="height: 25px; width: 25px;  background-color: #d10707; border-radius: 50%; display: inline-block;"></span>
+                                                            <span class="dot" style="height: 25px; width: 25px;  background-color: #a7c920; border-radius: 50%; display: inline-block;"></span>
+                                                            <span class="dot" style="height: 25px; width: 25px;  background-color: rgb(51, 168, 88); border-radius: 50%; display: inline-block;"></span>
+                                                            <span class="dot" style="height: 25px; width: 25px;  background-color: #520a0a; border-radius: 50%; display: inline-block;"></span>
+                                                            </div>
+                                                        </div>                        
+                                                    </div>
+
+                                                
+                                                    <hr style="margin-top: 12px;">
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group mb-0">
+                                                            <label for="exampleInputText3" class="h5">Similir As This</label>
+                                                            <div class="form-control bg-white custom-radius" style="text-align:justify;">
+                                                                <a href="C:\Users\ABC\Desktop\cpp">
+                                                                    Click to open Image
+                                                                </a>
+                                                                </div>
+                                                        </div>                        
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group mb-0">
+                                                            <label for="exampleInputText3" class="h5">Illustration From Client</label>
+                                                            <div class="form-control bg-white custom-radius" style="text-align:justify;">
+                                                                <a href="C:\Users\ABC\Desktop\cpp">
+                                                                    Click to open Image
+                                                                </a>
+                                                                </div>
+                                                        </div>                        
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group mb-0">
+                                                            <label for="exampleInputText3" class="h5">File From Client</label>
+                                                            <div class="form-control bg-white custom-radius" style="text-align:justify;">
+                                                                <a href="C:\Users\ABC\Desktop\cpp">
+                                                                    Click to open file
+                                                                </a>
+                                                                </div>
+                                                        </div>                        
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group mb-0">
+                                                            <label for="exampleInputText3" class="h5">FOnt</label>
+                                                            <div class="form-control bg-white custom-radius" style="text-align:justify;">
+                                                                <a href="C:\Users\ABC\Desktop\cpp">
+                                                                    Click to open Image
+                                                                </a>
+                                                                </div>
+                                                        </div>                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-3" style="border-radius: 20px;">
+                                            <div class="card-body">
+                                                <div class="row">                                                                                                              
+                                                        <h5 style="color: #333; " class="mb-2">Description :</h5>
+                                                        <p class="mb-0">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-3" style="border-radius: 20px;">
+                                            <div class="card-body">
+                                                <div class="row">                                                                                                              
+                                                        <h5 style="color: #333; " class="mb-2">A Note From The Client About His Order  :</h5>
+                                                        <p class="mb-0">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-3" style="border-radius: 20px;">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="form-group mb-0">
+                                                        <i class="ri-attachment-2"></i>
+                                                        <label for="exampleInputText01" class="h5">Upload Attachments</label>
+                                                        <input type="file" class=" form-control bg-white  " style="border-radius: 10px;" >
+                                                    </div>                                                                                                            
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>      
+                        </div>
+       
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="card" style="margin-left: 280px;">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card card-widget task-card">
+                            <div class="card-body">
+                                <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <h5 class="mb-2">social media customiz</h5>
+                                        </div>
+                                    </div>
+                                    <div class="media align-items-center mt-md-0 mt-3">
+                                        <a href="#" class="btn bg-info-light mr-3" >start</a>
+                                        <a class="btn bg-info-light" data-toggle="collapse" href="#collapseEdit5" role="button" aria-expanded="false" aria-controls="collapseEdit1"><i data-feather="edit"class="svg-icon"></i></a>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>                                                                                                        
+                        <div class="collapse" id="collapseEdit5">                                            
+                            <div class="card card-list task-card" id="edit">
+                                    <div  style="margin-top: 20px; margin-left: 16px;">
+                                        
+                                        <div class="form-group mb-0" style="margin: 19px;">
+                                            <div style="margin-left: 1010px;"><a href="#" class="btn btn-outline-warning"> save</a></div> 
+                                            <hr style="margin-top: 12px;">
+                                         
+                                        </div>
+                                    </div> 
+                           
+                                <div class="card-body">
+                                    <div class="form-group mb-3 position-relative">
+                                    
+                                        <input type="text" class=" form-control bg-white  " style="border-radius: 10px;"  value="Design landing page of webkit">
+                                        <a href="#" class="task-edit task-simple-edit text-body"><i data-feather="edit"class="svg-icon"></i></a>
+                                    </div>
+                                    <div class="card mb-3" style="border-radius: 20px;">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-0">
+                                                        <label for="exampleInputText2"   class="h5">content creator</label>
+                                                        <select  name="type" class="selectpicker custom-select form-control bg-white custom-radius" data-style="py-0"> 
+                                                            <option>For Small Project</option>
+                                                            <option> For Meduim Project </option>
+                                                            <option>For Huge Project</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-0">
+                                                        <label for="exampleInputText2"   class="h5">Type </label>
+                                                        <select  name="type" class="selectpicker custom-select form-control bg-white custom-radius" data-style="py-0"> 
+                                                            <option>Customiz</option>
+                                                            <option>Similer</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-0">
+                                                        <label for="exampleInputText3" class="h5">Due Dates</label>
+                                                        <input type="date" class="custom-select form-control bg-white custom-radius " id="exampleInputText3" value="">
+                                                    </div>                        
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-0">
+                                                        <label for="exampleInputText3" class="h5">Price</label>
+                                                        <input type="text" class=" form-control bg-white custom-radius " id="exampleInputText3" value="10$">
+                                                    </div>                        
+                                                </div>
+                                                <hr style="margin-top: 12px;">
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-0">
+                                                        <label for="exampleInputText2"   class="h5"> Design</label>
+                                                        <select  name="type" class="selectpicker custom-select form-control bg-white custom-radius" data-style="py-0"> 
+                                                            <option>Logo</option>
+                                                            <option>Somthing</option>
+                                                            <option>Somthing</option>
+                                                            <option>Somthing</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                              
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-0">
+                                                        <label for="exampleInputText2"   class="h5">Type Of social</label>
+                                                        <input type="text" class=" form-control bg-white custom-radius " id="exampleInputText3" value="facebook">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-0">
+                                                        <label for="exampleInputText2"   class="h5">Type Of Design</label>
+                                                        <input type="text" class=" form-control bg-white custom-radius " id="exampleInputText3" value="story">
+                                                    </div>
+                                                </div>
+                                             
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-0">
+                                                        <label for="exampleInputText3" class="h5">Illustration From Client</label>
+                                                        <div class="form-control bg-white custom-radius" style="text-align:justify;">
+                                                            <a href="C:\Users\ABC\Desktop\cpp">
+                                                                Click to open Image
+                                                            </a>
+                                                            </div>
+                                                    </div>                        
+                                                </div>
+
+                                            
+                                                <hr style="margin-top: 12px;">
+                                               
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-0">
+                                                        <label for="exampleInputText3" class="h5">Domain</label>
+                                                        <input type="text" class=" form-control bg-white custom-radius " id="exampleInputText3" value="sport">
+                                                    </div>                        
+                                                </div>
+                        
+                                               
+                                                <div class="col-lg-2">
+                                                    <div class="form-group mb-0">
+                                                        <label for="exampleInputText3" class="h5">Colors</label>
+                                                        <div class="form-control bg-white custom-radius" style="text-align:justify;">
+                                                        <span class="dot" style="height: 25px; width: 25px;  background-color: #d10707; border-radius: 50%; display: inline-block;"></span>
+                                                        <span class="dot" style="height: 25px; width: 25px;  background-color: #a7c920; border-radius: 50%; display: inline-block;"></span>
+                                                        <span class="dot" style="height: 25px; width: 25px;  background-color: rgb(51, 168, 88); border-radius: 50%; display: inline-block;"></span>
+                                                        <span class="dot" style="height: 25px; width: 25px;  background-color: #520a0a; border-radius: 50%; display: inline-block;"></span>
+                                                        </div>
+                                                    </div>                        
+                                                </div>
+
+                                               
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-0">
+                                                        <label for="exampleInputText3" class="h5">File From Client</label>
+                                                        <div class="form-control bg-white custom-radius" style="text-align:justify;">
+                                                            <a href="C:\Users\ABC\Desktop\cpp">
+                                                                Click to open file
+                                                            </a>
+                                                            </div>
+                                                    </div>                        
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3" style="border-radius: 20px;">
+                                        <div class="card-body">
+                                            <div class="row">                                                                                                              
+                                                    <h5 style="color: #333; " class="mb-2">Description :</h5>
+                                                    <p class="mb-0">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3" style="border-radius: 20px;">
+                                        <div class="card-body">
+                                            <div class="row">                                                                                                              
+                                                    <h5 style="color: #333; " class="mb-2">A Note From The Client About His Order  :</h5>
+                                                    <p class="mb-0">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3" style="border-radius: 20px;">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="form-group mb-0">
+                                                    <i class="ri-attachment-2"></i>
+                                                    <label for="exampleInputText01" class="h5">Upload Attachments</label>
+                                                    <input type="file" class=" form-control bg-white  " style="border-radius: 10px;" >
+                                                </div>                                                                                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>      
+                    </div>
+   
+        </div>
+    </div>
+</div>
+
+<div class="col-12">
+    <div class="card" style="margin-left: 280px;">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card card-widget task-card">
+                        <div class="card-body">
+                            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <h5 class="mb-2">social media similler</h5>
+                                    </div>
+                                </div>
+                                <div class="media align-items-center mt-md-0 mt-3">
+                                    <a href="#" class="btn bg-info-light mr-3" >start</a>
+                                    <a class="btn bg-info-light" data-toggle="collapse" href="#collapseEdit6" role="button" aria-expanded="false" aria-controls="collapseEdit1"><i data-feather="edit"class="svg-icon"></i></a>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>                                                                                                        
+                    <div class="collapse" id="collapseEdit6">                                            
+                        <div class="card card-list task-card" id="edit">
+                                <div  style="margin-top: 20px; margin-left: 16px;">
+                                    
+                                    <div class="form-group mb-0" style="margin: 19px;">
+                                        <div style="margin-left: 1010px;"><a href="#" class="btn btn-outline-warning"> save</a></div> 
+                                        <hr style="margin-top: 12px;">
+                                     
+                                    </div>
+                                </div> 
+                        
+                            <div class="card-body">
+                                <div class="form-group mb-3 position-relative">
+                                
+                                    <input type="text" class=" form-control bg-white  " style="border-radius: 10px;"  value="Design landing page of webkit">
+                                    <a href="#" class="task-edit task-simple-edit text-body"><i data-feather="edit"class="svg-icon"></i></a>
+                                </div>
+                                <div class="card mb-3" style="border-radius: 20px;">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <div class="form-group mb-0">
+                                                    <label for="exampleInputText2"   class="h5">content creator</label>
+                                                    <select  name="type" class="selectpicker custom-select form-control bg-white custom-radius" data-style="py-0"> 
+                                                        <option>For Small Project</option>
+                                                        <option> For Meduim Project </option>
+                                                        <option>For Huge Project</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="form-group mb-0">
+                                                    <label for="exampleInputText2"   class="h5">Type </label>
+                                                    <select  name="type" class="selectpicker custom-select form-control bg-white custom-radius" data-style="py-0"> 
+                                                        <option>Customiz</option>
+                                                        <option>Similer</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="form-group mb-0">
+                                                    <label for="exampleInputText3" class="h5">Due Dates</label>
+                                                    <input type="date" class="custom-select form-control bg-white custom-radius " id="exampleInputText3" value="">
+                                                </div>                        
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="form-group mb-0">
+                                                    <label for="exampleInputText3" class="h5">Price</label>
+                                                    <input type="text" class=" form-control bg-white custom-radius " id="exampleInputText3" value="10$">
+                                                </div>                        
+                                            </div>
+                                            <hr style="margin-top: 12px;">
+                                            <div class="col-lg-3">
+                                                <div class="form-group mb-0">
+                                                    <label for="exampleInputText2"   class="h5"> Design</label>
+                                                    <select  name="type" class="selectpicker custom-select form-control bg-white custom-radius" data-style="py-0"> 
+                                                        <option>Logo</option>
+                                                        <option>Somthing</option>
+                                                        <option>Somthing</option>
+                                                        <option>Somthing</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                          
+                                            <div class="col-lg-3">
+                                                <div class="form-group mb-0">
+                                                    <label for="exampleInputText2"   class="h5">Type Of social</label>
+                                                    <input type="text" class=" form-control bg-white custom-radius " id="exampleInputText3" value="facebook">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="form-group mb-0">
+                                                    <label for="exampleInputText2"   class="h5">Type Of Design</label>
+                                                    <input type="text" class=" form-control bg-white custom-radius " id="exampleInputText3" value="story">
+                                                </div>
+                                            </div>
+                                         
+                                            <div class="col-lg-3">
+                                                <div class="form-group mb-0">
+                                                    <label for="exampleInputText3" class="h5">File From Client</label>
+                                                    <div class="form-control bg-white custom-radius" style="text-align:justify;">
+                                                        <a href="C:\Users\ABC\Desktop\cpp">
+                                                            Click to open file
+                                                        </a>
+                                                        </div>
+                                                </div>                        
+                                            </div>
+
+                                        
+                                            <hr style="margin-top: 12px;">
+                                           
+                                            <div class="col-lg-2">
+                                                <div class="form-group mb-0">
+                                                    <label for="exampleInputText3" class="h5">Domain</label>
+                                                    <input type="text" class=" form-control bg-white custom-radius " id="exampleInputText3" value="sport">
+                                                </div>                        
+                                            </div>
+                    
+                                           
+                                            <div class="col-lg-2">
+                                                <div class="form-group mb-0">
+                                                    <label for="exampleInputText3" class="h5">Colors</label>
+                                                    <div class="form-control bg-white custom-radius" style="text-align:justify;">
+                                                    <span class="dot" style="height: 25px; width: 25px;  background-color: #d10707; border-radius: 50%; display: inline-block;"></span>
+                                                    <span class="dot" style="height: 25px; width: 25px;  background-color: #a7c920; border-radius: 50%; display: inline-block;"></span>
+                                                    <span class="dot" style="height: 25px; width: 25px;  background-color: rgb(51, 168, 88); border-radius: 50%; display: inline-block;"></span>
+                                                    <span class="dot" style="height: 25px; width: 25px;  background-color: #520a0a; border-radius: 50%; display: inline-block;"></span>
+                                                    </div>
+                                                </div>                        
+                                            </div>
+
+                                            <div class="col-lg-3">
+                                                <div class="form-group mb-0">
+                                                    <label for="exampleInputText3" class="h5">Illustration From Client</label>
+                                                    <div class="form-control bg-white custom-radius" style="text-align:justify;">
+                                                        <a href="C:\Users\ABC\Desktop\cpp">
+                                                            Click to open Image
+                                                        </a>
+                                                        </div>
+                                                </div>                        
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="form-group mb-0">
+                                                    <label for="exampleInputText3" class="h5">Similler As This</label>
+                                                    <div class="form-control bg-white custom-radius" style="text-align:justify;">
+                                                        <a href="C:\Users\ABC\Desktop\cpp">
+                                                            Click to open Image
+                                                        </a>
+                                                        </div>
+                                                </div>                        
+                                            </div>
+                                            
+                                          
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3" style="border-radius: 20px;">
+                                    <div class="card-body">
+                                        <div class="row">                                                                                                              
+                                                <h5 style="color: #333; " class="mb-2">Description :</h5>
+                                                <p class="mb-0">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3" style="border-radius: 20px;">
+                                    <div class="card-body">
+                                        <div class="row">                                                                                                              
+                                                <h5 style="color: #333; " class="mb-2">A Note From The Client About His Order  :</h5>
+                                                <p class="mb-0">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3" style="border-radius: 20px;">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="form-group mb-0">
+                                                <i class="ri-attachment-2"></i>
+                                                <label for="exampleInputText01" class="h5">Upload Attachments</label>
+                                                <input type="file" class=" form-control bg-white  " style="border-radius: 10px;" >
+                                            </div>                                                                                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>      
+                </div>
+
+    </div>
+</div>
+</div>
+
+
+    <div class="col-12">
+        <div class="card" style="margin-left: 280px;">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card card-widget task-card">
+                            <div class="card-body">
+                                <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <h5 class="mb-2">rest designes customiz</h5>
+                                        </div>
+                                    </div>
+                                    <div class="media align-items-center mt-md-0 mt-3">
+                                        <a href="#" class="btn bg-info-light mr-3" >start</a>
+                                        <a class="btn bg-info-light" data-toggle="collapse" href="#collapseEdit3" role="button" aria-expanded="false" aria-controls="collapseEdit1"><i data-feather="edit"class="svg-icon"></i></a>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>                                                                                                        
+                        <div class="collapse" id="collapseEdit3">                                            
+                            <div class="card card-list task-card" id="edit">
+                                    <div  style="margin-top: 20px; margin-left: 16px;">
+                                        
+                                        <div class="form-group mb-0" style="margin: 19px;">
+                                            <div style="margin-left: 1010px;"><a href="#" class="btn btn-outline-warning"> save</a></div> 
+                                            <hr style="margin-top: 12px;">
+                                         
+                                        </div>
+                                    </div> 
+                          
+                                <div class="card-body">
+                                    <div class="form-group mb-3 position-relative">
+                                    
+                                        <input type="text" class=" form-control bg-white  " style="border-radius: 10px;"  value="Design landing page of webkit">
+                                        <a href="#" class="task-edit task-simple-edit text-body"><i data-feather="edit"class="svg-icon"></i></a>
+                                    </div>
+                                    <div class="card mb-3" style="border-radius: 20px;">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-0">
+                                                        <label for="exampleInputText2"   class="h5">content creator</label>
+                                                        <select  name="type" class="selectpicker custom-select form-control bg-white custom-radius" data-style="py-0"> 
+                                                            <option>For Small Project</option>
+                                                            <option> For Meduim Project </option>
+                                                            <option>For Huge Project</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-0">
+                                                        <label for="exampleInputText2"   class="h5">Type </label>
+                                                        <select  name="type" class="selectpicker custom-select form-control bg-white custom-radius" data-style="py-0"> 
+                                                            <option>Customiz</option>
+                                                            <option>Similer</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-0">
+                                                        <label for="exampleInputText3" class="h5">Due Dates</label>
+                                                        <input type="date" class="custom-select form-control bg-white custom-radius " id="exampleInputText3" value="">
+                                                    </div>                        
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-0">
+                                                        <label for="exampleInputText3" class="h5">Price</label>
+                                                        <input type="text" class=" form-control bg-white custom-radius " id="exampleInputText3" value="10$">
+                                                    </div>                        
+                                                </div>
+                                                <hr style="margin-top: 12px;">
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-0">
+                                                        <label for="exampleInputText2"   class="h5"> Design</label>
+                                                        <select  name="type" class="selectpicker custom-select form-control bg-white custom-radius" data-style="py-0"> 
+                                                            <option>Logo</option>
+                                                            <option>Somthing</option>
+                                                            <option>Somthing</option>
+                                                            <option>Somthing</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                              
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-0">
+                                                        <label for="exampleInputText2"   class="h5">Type Of Design</label>
+                                                        <input type="text" class=" form-control bg-white custom-radius " id="exampleInputText3" value="symbol">
+                                                    </div>
+                                                </div>
+                                             
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-0">
+                                                        <label for="exampleInputText3" class="h5">Domain</label>
+                                                        <input type="text" class=" form-control bg-white custom-radius " id="exampleInputText3" value="sport">
+                                                    </div>                        
+                                                </div>
+                        
+                                               
+                                                <div class="col-lg-2">
+                                                    <div class="form-group mb-0">
+                                                        <label for="exampleInputText3" class="h5">Colors</label>
+                                                        <div class="form-control bg-white custom-radius" style="text-align:justify;">
+                                                        <span class="dot" style="height: 25px; width: 25px;  background-color: #d10707; border-radius: 50%; display: inline-block;"></span>
+                                                        <span class="dot" style="height: 25px; width: 25px;  background-color: #a7c920; border-radius: 50%; display: inline-block;"></span>
+                                                        <span class="dot" style="height: 25px; width: 25px;  background-color: rgb(51, 168, 88); border-radius: 50%; display: inline-block;"></span>
+                                                        <span class="dot" style="height: 25px; width: 25px;  background-color: #520a0a; border-radius: 50%; display: inline-block;"></span>
+                                                        </div>
+                                                    </div>                        
+                                                </div>
+
+                                            
+                                                <hr style="margin-top: 12px;">
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-0">
+                                                        <label for="exampleInputText2"   class="h5"> Size</label>
+                                                        <select  name="type" class="selectpicker custom-select form-control bg-white custom-radius" data-style="py-0"> 
+                                                            <option>140 x 1</option>
+                                                            <option>Somthing</option>
+                                                            <option>Somthing</option>
+                                                            <option>Somthing</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-0">
+                                                        <label for="exampleInputText3" class="h5">Illustration From Client</label>
+                                                        <div class="form-control bg-white custom-radius" style="text-align:justify;">
+                                                            <a href="C:\Users\ABC\Desktop\cpp">
+                                                                Click to open Image
+                                                            </a>
+                                                            </div>
+                                                    </div>                        
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-0">
+                                                        <label for="exampleInputText3" class="h5">File From Client</label>
+                                                        <div class="form-control bg-white custom-radius" style="text-align:justify;">
+                                                            <a href="C:\Users\ABC\Desktop\cpp">
+                                                                Click to open file
+                                                            </a>
+                                                            </div>
+                                                    </div>                        
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3" style="border-radius: 20px;">
+                                        <div class="card-body">
+                                            <div class="row">                                                                                                              
+                                                    <h5 style="color: #333; " class="mb-2">Description :</h5>
+                                                    <p class="mb-0">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3" style="border-radius: 20px;">
+                                        <div class="card-body">
+                                            <div class="row">                                                                                                              
+                                                    <h5 style="color: #333; " class="mb-2">A Note From The Client About His Order  :</h5>
+                                                    <p class="mb-0">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3" style="border-radius: 20px;">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="form-group mb-0">
+                                                    <i class="ri-attachment-2"></i>
+                                                    <label for="exampleInputText01" class="h5">Upload Attachments</label>
+                                                    <input type="file" class=" form-control bg-white  " style="border-radius: 10px;" >
+                                                </div>                                                                                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>      
+                    </div>
+   
+        </div>
+    </div>
+</div>
+
+<div class="col-12">
+    <div class="card" style="margin-left: 280px;">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card card-widget task-card">
+                        <div class="card-body">
+                            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <h5 class="mb-2">rest design similer</h5>
+                                    </div>
+                                </div>
+                                <div class="media align-items-center mt-md-0 mt-3">
+                                    <a href="#" class="btn bg-info-light mr-3" >start</a>
+                                    <a class="btn bg-info-light" data-toggle="collapse" href="#collapseEdit4" role="button" aria-expanded="false" aria-controls="collapseEdit1"><i data-feather="edit"class="svg-icon"></i></a>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>                                                                                                        
+                    <div class="collapse" id="collapseEdit4">                                            
+                        <div class="card card-list task-card" id="edit">
+                                <div  style="margin-top: 20px; margin-left: 16px;">
+                                    
+                                    <div class="form-group mb-0" style="margin: 19px;">
+                                        <div style="margin-left: 1010px;"><a href="#" class="btn btn-outline-warning"> save</a></div> 
+                                        <hr style="margin-top: 12px;">
+                                     
+                                    </div>
+                                </div> 
+                        
+                            <div class="card-body">
+                                <div class="form-group mb-3 position-relative">
+                                
+                                    <input type="text" class=" form-control bg-white  " style="border-radius: 10px;"  value="Design landing page of webkit">
+                                    <a href="#" class="task-edit task-simple-edit text-body"><i data-feather="edit"class="svg-icon"></i></a>
+                                </div>
+                                <div class="card mb-3" style="border-radius: 20px;">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <div class="form-group mb-0">
+                                                    <label for="exampleInputText2"   class="h5">content creator</label>
+                                                    <select  name="type" class="selectpicker custom-select form-control bg-white custom-radius" data-style="py-0"> 
+                                                        <option>For Small Project</option>
+                                                        <option> For Meduim Project </option>
+                                                        <option>For Huge Project</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="form-group mb-0">
+                                                    <label for="exampleInputText2"   class="h5">Type </label>
+                                                    <select  name="type" class="selectpicker custom-select form-control bg-white custom-radius" data-style="py-0"> 
+                                                        <option>Customiz</option>
+                                                        <option>Similer</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="form-group mb-0">
+                                                    <label for="exampleInputText3" class="h5">Due Dates</label>
+                                                    <input type="date" class="custom-select form-control bg-white custom-radius " id="exampleInputText3" value="">
+                                                </div>                        
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="form-group mb-0">
+                                                    <label for="exampleInputText3" class="h5">Price</label>
+                                                    <input type="text" class=" form-control bg-white custom-radius " id="exampleInputText3" value="10$">
+                                                </div>                        
+                                            </div>
+                                            <hr style="margin-top: 12px;">
+                                            <div class="col-lg-3">
+                                                <div class="form-group mb-0">
+                                                    <label for="exampleInputText2"   class="h5"> Design</label>
+                                                    <select  name="type" class="selectpicker custom-select form-control bg-white custom-radius" data-style="py-0"> 
+                                                        <option>Logo</option>
+                                                        <option>Somthing</option>
+                                                        <option>Somthing</option>
+                                                        <option>Somthing</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="form-group mb-0">
+                                                    <label for="exampleInputText2"   class="h5">Type Of Design</label>
+                                                    <input type="text" class=" form-control bg-white custom-radius " id="exampleInputText3" value="symbol">
+                                                </div>
+                                            </div>
+                                         
+                                            <div class="col-lg-3">
+                                                <div class="form-group mb-0">
+                                                    <label for="exampleInputText3" class="h5">Domain</label>
+                                                    <input type="text" class=" form-control bg-white custom-radius " id="exampleInputText3" value="sport">
+                                                </div>                        
+                                            </div>
+                    
+                                           
+                                            <div class="col-lg-2">
+                                                <div class="form-group mb-0">
+                                                    <label for="exampleInputText3" class="h5">Colors</label>
+                                                    <div class="form-control bg-white custom-radius" style="text-align:justify;">
+                                                    <span class="dot" style="height: 25px; width: 25px;  background-color: #d10707; border-radius: 50%; display: inline-block;"></span>
+                                                    <span class="dot" style="height: 25px; width: 25px;  background-color: #a7c920; border-radius: 50%; display: inline-block;"></span>
+                                                    <span class="dot" style="height: 25px; width: 25px;  background-color: rgb(51, 168, 88); border-radius: 50%; display: inline-block;"></span>
+                                                    <span class="dot" style="height: 25px; width: 25px;  background-color: #520a0a; border-radius: 50%; display: inline-block;"></span>
+                                                    </div>
+                                                </div>                        
+                                            </div>
+                                          
+                                        
+                                            <hr style="margin-top: 12px;">
+                                           
+                                            <div class="col-lg-3">
+                                                <div class="form-group mb-0">
+                                                    <label for="exampleInputText3" class="h5">Illustration From Client</label>
+                                                    <div class="form-control bg-white custom-radius" style="text-align:justify;">
+                                                        <a href="C:\Users\ABC\Desktop\cpp">
+                                                            Click to open Image
+                                                        </a>
+                                                        </div>
+                                                </div>                        
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="form-group mb-0">
+                                                    <label for="exampleInputText3" class="h5">File From Client</label>
+                                                    <div class="form-control bg-white custom-radius" style="text-align:justify;">
+                                                        <a href="C:\Users\ABC\Desktop\cpp">
+                                                            Click to open file
+                                                        </a>
+                                                        </div>
+                                                </div>                        
+                                            </div>
+                                           
+
+                                            
+                                            <div class="col-lg-3">
+                                                <div class="form-group mb-0">
+                                                    <label for="exampleInputText2"   class="h5"> Size</label>
+                                                    <select  name="type" class="selectpicker custom-select form-control bg-white custom-radius" data-style="py-0"> 
+                                                        <option>132 x 155</option>
+                                                        <option>Somthing</option>
+                                                        <option>Somthing</option>
+                                                        <option>Somthing</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3">
+                                                <div class="form-group mb-0">
+                                                    <label for="exampleInputText3" class="h5">Similir As This</label>
+                                                    <div class="form-control bg-white custom-radius" style="text-align:justify;">
+                                                        <a href="C:\Users\ABC\Desktop\cpp">
+                                                            Click to open Image
+                                                        </a>
+                                                        </div>
+                                                </div>                        
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3" style="border-radius: 20px;">
+                                    <div class="card-body">
+                                        <div class="row">                                                                                                              
+                                                <h5 style="color: #333; " class="mb-2">Description :</h5>
+                                                <p class="mb-0">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3" style="border-radius: 20px;">
+                                    <div class="card-body">
+                                        <div class="row">                                                                                                              
+                                                <h5 style="color: #333; " class="mb-2">A Note From The Client About His Order  :</h5>
+                                                <p class="mb-0">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3" style="border-radius: 20px;">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="form-group mb-0">
+                                                <i class="ri-attachment-2"></i>
+                                                <label for="exampleInputText01" class="h5">Upload Attachments</label>
+                                                <input type="file" class=" form-control bg-white  " style="border-radius: 10px;" >
+                                            </div>                                                                                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>      
+                </div>
+
+    </div>
+</div>
+</div>
+
+        <!-- Page end  -->
+    
+  
+   
+    <!-- Backend Bundle JavaScript -->
+    <script src="../dist/js/backend-bundle.min.js"></script>
+    
+    <!-- Table Treeview JavaScript -->
+    <script src="../dist/js/table-treeview.js"></script>
+    
+    <!-- Chart Custom JavaScript -->
+    <script src="../dist/js/customizer.js"></script>
+    
+    <!-- Chart Custom JavaScript -->
+    <script async src="../dist/js/chart-custom.js"></script>
+    <!-- Chart Custom JavaScript -->
+    <script async src="../dist/js/slider.js"></script>
+    
+    <!-- app JavaScript -->
+    <script src="../dist/js/app.js"></script>
+    
+    <script src="../dist/vendor/moment.min.js"></script>
+
+
+
+
+
+    <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- apps -->
+    <!-- apps -->
+    <script src="../dist/js/app-style-switcher.js"></script>
+    <script src="../dist/js/feather.min.js"></script>
+    <script src="../assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+    <script src="../dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="../dist/js/custom.min.js"></script>
+    <!--This page JavaScript -->
+    <script src="../assets/extra-libs/c3/d3.min.js"></script>
+    
+    <script src="../assets/extra-libs/c3/c3.min.js"></script>
+    <script src="../assets/libs/chartist/dist/chartist.min.js"></script>
+    <script src="../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="../assets/extra-libs/jvector/jquery-jvectormap-2.0.2.min.js"></script>
+    <script src="../assets/extra-libs/jvector/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="../dist/js/pages/dashboards/dashboard1.min.js"></script>
+      <!-- Vendors JS -->
+      <script src="../assets/vendor/libs/apex-charts/apexcharts.js"></script>
+      <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+      <!-- Main JS -->
+      <script src="../assets/js/main.js"></script>
+  
+      <!-- Page JS -->
+      <script src="../assets/js/dashboards-analytics.js"></script>
+  </body>
+</html>
